@@ -517,7 +517,7 @@
          
           
            <div class="container" align="center">
-	  <video  src="images/video.mp4" controls></video>
+	  <video  src="images/video.mp4" autoplay loop></video>
          		       
         	  </div>
           
@@ -1102,13 +1102,7 @@
         </div>
     </footer>
     
-    <!--APORTE PERUANO BOTON WHATSTAP --> 
-    <div class="btn-whatsapp">
-        <a href="https://wa.me/16204813445?text=Hola, me interesa trabajar contigo ¿Podemos hablar sobre mi idea?" target="_blank">
-        <img src="images/user/w.png"  class="social-img" >
-        </a>
-        </div>
-
+    
     <!--jQuery, Bootstrap and other vendor JS-->
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -1128,5 +1122,20 @@
     
     <!--Construction JS-->
     <script src="js/construction.js"></script>
+     <script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+16204813445"", // WhatsApp number
+            call_to_action: "Contáctanos", // Call to action
+            position: "left", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+    
+    
 </body>
 </html>
