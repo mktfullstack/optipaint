@@ -2619,6 +2619,19 @@ video {
 }
 
 
+.btn-whatsapp {
+      display:block;
+      width:30px;
+      height:30px;
+      color:#fff;
+      position: fixed;
+      left:30px;
+      bottom:80px;
+      border-radius:50%;
+      line-height:80px;
+      text-align:center;
+      z-index:999;
+}
 
 
 
